@@ -1,0 +1,202 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: baseline;
+  color: black;
+}
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+a:focus {
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}  
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+
+/* Base Styles */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.navbar {
+    margin-bottom: 0px !important;
+}
+
+.facolor {
+    color: #ffa700;
+}
+
+.p {
+    padding: 20px;
+}
+
+.bgimg {
+    height: 500px;
+    width: 100%;
+    background-image: url('../image/computer-desk-doctor-48604.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: inset 0px 0px 10px #000;
+}
+
+.bgreg {
+    /* height: 500px; */
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: inset 0px 0px 10px #000;
+}
+
+.content_center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 300px;
+}
+
+.fw {
+    font-weight: bold;
+}
+
+.bodyheader {
+    font-size: 5.4rem;
+} 
+
+.img {
+    width: 50px;
+    height: 50px;
+}
+
+.bgcontent {
+    height: 200px;
+    background: rgba(204, 202, 198, 0.44);
+    box-shadow: 0px 1px 1px #c1c1c1;
+    border: 1px solid rgb(170, 170, 170);
+    padding: 16%;
+}
+
+.context {
+    font-size: 30px;
+}
+
+@media only screen and (max-width:840px) {
+    .bodyheader {
+        font-size: 1.4rem;
+    }
+    .logodiv {
+        text-align: center;
+    }
+    .bgcontent {
+        height: auto;
+        padding: 0px;
+    }
+    .context {
+        font-size: 12px;
+    }
+    .wizard>.steps>ul>li {
+        float: none;
+        width: 100%;
+    }
+}
+
+thead>tr>th:first-child::after {
+    /* border: 1px solid #000; */
+}
+
+table>thead>tr th{
+    text-align: center !important;
+    border-bottom: 2px solid #000 !important;  
+}
+
+table>thead>tr th:first-child {
+    text-align: left !important;
+    border-bottom: none !important; 
+}
+
+table input[type="checkbox"]{
+
+    -webkit-appearance: none;
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 0 !important;
+ }
+ input[type="checkbox"]:checked{
+     background-image: url('../image/checked.svg');
+     background-size: cover;
+     background-position: center;
+    /* background-color: #2ECC71; */
+  }
+  .accto {
+      background-image: url(../image/accto.png); 
+      width: 100%;
+      height: 60px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+.form-control {
+    border-radius: 0px !important;
+    border: 1px solid #000 !important;
+}

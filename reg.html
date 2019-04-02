@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>DocRx</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mainwiz.css">
+    <link rel="stylesheet" href="css/jquery.steps.css">
+    <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.cookie-1.3.1.js"></script>
+    <script src="js/jquery.steps.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 p">
+                <p class="text-right">
+                    <a href="#!" class="text-dark" style="display: inline-block;">
+                        <span class="text-center" style="font-size: 30px;display: block;">
+                            <i class="far fa-file-alt facolor"></i>
+                        </span><br>
+
+                        <span class="text-dark text-right" style="display: block;">Click here for text</span>
+                    </a>
+                </p>
+            </div>
+            <div class="col-lg-6 p">
+                <div class="logodiv">
+                    <a href="main.html">
+                        <img style="height:100px;width:290px" src="image/logo.png" alt="">
+                    </a>
+                    <a href="#!">
+                        <p class="text-muted">HIPAA Compliant 2018</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 p">
+                <p class="text-right">
+                    <a href="#!" class="text-dark" style="display: inline-block;">
+
+                        <span class="text-center" style="font-size: 30px;display: block;">
+                            <img src="image/grid-world.png" alt="">
+                        </span><br>
+                        <span class="text-muted text-right" style="display: block;">MAIN PAGE</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-muted">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle text-muted" data-toggle="dropdown" href="#">Contact Us <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Phone</a></li>
+                            <li><a href="#">Email</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="bgreg">
+                <div class="content">
+
+                    <script>
+                        $(function () {
+                            $("#wizard").steps({
+                                headerTag: "h2",
+                                bodyTag: "section",
+                                transitionEffect: "slideLeft",
+                                enableAllSteps: true,
+                                labels: {
+                                    next: "Save & Next",
+                                }
+                            });
+                        });
+                    </script>
+
+                    <div id="wizard">
+                        <h2>Professional</h2>
+                        <section>
+                            <form class="form-horizontal" action="/">
+
+                                <div class="form-group">
+                                    <div class="col-lg-12">
+                                        <div class="pull-right">
+                                            <span style="padding: 10px"><i class="far fa-edit"
+                                                    style="padding: 10px"></i>Edit</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="title">Title*</label>
+                                        <select class="form-control" id="" placeholder="" name="" required>
+                                            <option value="">Dr/Professor</option>
+                                            <option value="">Dr/Professor</option>
+                                            <option value="">Dr/Professor</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="pwd">Name*</label>
+                                        <input type="text" class="form-control" id="" placeholder="Enter name" name=""
+                                            required>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="pwd">Date of Birth*</label>
+                                        <input type="date" class="form-control" id="" placeholder="Enter name" name=""
+                                            required>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="gender">Gender*</label>
+                                        <select class="form-control" id="" placeholder="" name="" required>
+                                            <option value="">Select One</option>
+                                            <option value="">Male</option>
+                                            <option value="">Female</option>
+                                            <option value="">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="pwd">Mobile No*</label>
+                                        <input type="tel" class="form-control" id="" placeholder="Enter phone no"
+                                            name="" required>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="pwd">Email*</label>
+                                        <input type="text" class="form-control" id="" placeholder="Enter email" name=""
+                                            required>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="firstLanguage">First Language*</label>
+                                        <select class="form-control" id="" placeholder="" name="" required>
+                                            <option value="">Select One</option>
+                                            <option value="">Hindi</option>
+                                            <option value="">English</option>
+                                            <option value="">Bengali</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="secondLanguage">Second Language*</label>
+                                        <select class="form-control" id="" placeholder="" name="" required>
+                                            <option value="">Select One</option>
+                                            <option value="">Hindi</option>
+                                            <option value="">English</option>
+                                            <option value="">Bengali</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="pwd">Medical registration Number*</label>
+                                        <input type="text" class="form-control" id=""
+                                            placeholder="Enter medical registration number" name="" required>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="pwd">Years of Practice*</label>
+                                        <input type="number" class="form-control" id="" placeholder="Enter of practice"
+                                            name="" required>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="firstLanguage">Specality*</label>
+                                        <select class="form-control" id="" placeholder="" name="" required>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="firstLanguage">Qualification/Degrees*</label>
+                                        <script type="text/javascript">
+                                            $('#example-multiple-selected').multiselect();
+                                        </script>
+                                        <!-- Note the missing multiple attribute! -->
+                                        <select class="form-control" id="example-multiple-selected" multiple="multiple">
+                                            <option value="1">Option 1</option>
+                                            <option value="2" selected="selected">Option 2</option>
+                                            <!-- Option 3 will be selected in advance ... -->
+                                            <option value="3" selected="selected">Option 3</option>
+                                            <option value="4">Option 4</option>
+                                            <option value="5">Option 5</option>
+                                            <option value="6">Option 6</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="pwd">Degisnation*</label>
+                                        <input type="text" class="form-control" id="" placeholder="Enter degisnation"
+                                            name="" required>
+                                    </div>
+
+
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="pwd">Password*</label>
+                                        <input type="password" class="form-control" id="" placeholder="******" name=""
+                                            required>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="pwd">Confirm Password*</label>
+                                        <input type="password" class="form-control" id="" placeholder="******" name=""
+                                            required>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="preview" style="width:50px;height:50px;border-radius:50%;">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <input type="file" id="picture" name="pic" style="width:103px;">
+                                                <label class="control-label" for="pwd">Upload Photo(<300 kb)</label>
+                                                        </div> </div> <!-- <input type="file" name="pic"
+                                                        accept="image/*">
+                                                        <label class="control-label" for="pwd">Upload Photo(<300
+                                                                kb)</label> -->
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value="">CAPTCHA for password</label>
+                                        </div>
+
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value="">I declare all the information
+                                                provided by
+                                                me is
+                                                true.</label>
+                                        </div>
+                            </form>
+                        </section>
+
+                        <h2>Support Staff</h2>
+                        <section>
+                            <form class="form-horizontal" action="/">
+                                <div class="form-group">
+                                    <div class="pull-right">
+                                        <span class="add" style="padding: 10px"><i class="far fa-edit"
+                                                style="padding: 10px"></i>Add</span>
+
+                                        <span style="padding: 10px"><i class="far fa-edit"
+                                                style="padding: 10px"></i>Edit</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="firstLanguage">Is Support Staff already
+                                            registered on
+                                            DocRX?*</label>
+                                        <select class="form-control" id="" placeholder="" name="" required>
+                                            <option value=""></option>
+                                            <option value="">Yes</option>
+                                            <option value="">No</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="addopen">
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="pwd">Name*</label>
+                                        <input type="text" class="form-control" id="" placeholder="Enter name" name=""
+                                            required>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="pwd">Mobile No*</label>
+                                        <input type="tel" class="form-control" id="" placeholder="Enter phone no"
+                                            name="" required>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="pwd">Email*</label>
+                                        <input type="email" class="form-control" id="" placeholder="Enter phone email"
+                                            name="" required>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-lg-3">
+                                        <label class="control-label" for="firstLanguage">Select Support Staff
+                                            Name</label>
+                                        <select class="form-control" id="" placeholder="" name="" required>
+                                            <option value=""></option>
+                                            <option value="">A</option>
+                                            <option value="">B</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th style="height: 63px">
+                                                    <div style="
+                                                    position: absolute;
+                                                    top: 0;" class="accto">
+                                                    <h2 style="padding: 20px">Access to</h2>    
+                                                </div>
+                                                </th>
+                                                <th><h4 style="color: #046a8a;font-weight: 700;">My Plan</h4></th>
+                                                <th><h4 style="color: #046a8a;font-weight: 700;">My Patients</h4></th>
+                                                <th><h4 style="color: #046a8a;font-weight: 700;">Reports</h4></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Administrator</th>
+                                                <td>
+                                                    <div class="checkbox">
+                                                        <p class="text-center"><label><input type="checkbox"
+                                                                    value=""></label></p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="checkbox">
+                                                        <p class="text-center"><label><input type="checkbox"
+                                                                    value=""></label></p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="checkbox">
+                                                        <p class="text-center"><label><input type="checkbox"
+                                                                    value=""></label></p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Receptionist</th>
+                                                <td>
+                                                    <div class="checkbox">
+                                                        <p class="text-center"><label><input type="checkbox"
+                                                                    value=""></label></p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="checkbox">
+                                                        <p class="text-center"><label><input type="checkbox"
+                                                                    value=""></label></p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="checkbox">
+                                                        <p class="text-center"><label><input type="checkbox"
+                                                                    value=""></label></p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Medical Assistant</th>
+                                                <td>
+                                                    <div class="checkbox">
+                                                        <p class="text-center"><label><input type="checkbox"
+                                                                    value=""></label></p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="checkbox">
+                                                        <p class="text-center"><label><input type="checkbox"
+                                                                    value=""></label></p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="checkbox">
+                                                        <p class="text-center"><label><input type="checkbox"
+                                                                    value=""></label></p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Access</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Partial Access in My Patients Walk-in Booking
+                                        &
+                                        Investigation Report filing</label>
+                                </div>
+                            </form>
+                        </section>
+
+                        <h2>Communication</h2>
+                        <section>
+                        </section>
+
+                        <h2>Rx Preferances</h2>
+                        <section>
+                        </section>
+
+                        <h2>Data Security</h2>
+                        <section>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function readURL(input) {
+
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.preview').attr('style', 'background-image:url(' + e.target.result +
+                        ');background-size: cover; background-position:center;width:50px;height:50px;border-radius:50%;'
+                        );
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $(document).ready(function () {
+            $("#picture").change(function () {
+                readURL(this);
+            });
+
+
+                $(".addopen").hide();
+            $(".add").click(function() {
+                $(".addopen").show();
+            });
+        });
+    </script>
+</body>
+
+</html>
